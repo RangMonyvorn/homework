@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Website bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        nav a{
+            margin-left: 1rem;
+            transition: .5s;
+        }
+        nav a:hover{
+            padding: 5px 10px ;
+            background-color:gray;
+
+            border-radius: 5px;
+        }
+        .card img{
+            height: 20rem;
+            
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="border-radius: 10px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ANIME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#manga">Manga Movie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="home-page d-flex align-items-center justify-content-center text-white text-center" style="height: 90vh; background-image: url('gif\ gojo.gif'); background-size: cover;">
+        <div>
+            <h1 style="color: darkred;">Welcome To Anime Website</h1>
+            <p style="color: white;">Please Welcome to Website Me! . Detial for in the About Website</p>
+            <a href="#manga" class="btn btn-secondary mt-3">Hire Me</a>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5" style="height: 60vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 style="color: darkred;">Hello</h2>
+                    <h4>A Bit About Me!</h4>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. I'm a great place for you to tell a story and let your users know a little more about you.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="gojo.jfif" class="img-fluid " alt="About Image" style="width: 30rem; height:fit-content;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Manga movie Section -->
+    <section id="manga" class="py-5 bg-dark" style="margin-top: 3rem;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: darkred;font-size:1rem;">All MANGA OF MOVIE</h2>
+            <div class="row g-5">
+                
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Naruto.jfif" class="card-img-top" alt="" >
+                        <div class="card-body">
+                            <h5 class="card-title">NURUTO</h5>
+                            <p class="card-text">Manga naruto anime of japan</p>
+                            <a href="#" class="btn btn-secondary">Buy Now <i class="fa-solid fa-book" style="padding-left: 1rem;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="gojo.jfif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Jutjosu Kiason</h5>
+                            <p class="card-text">Manga of Jutjusu Kiason</p>
+                            <a href="#" class="btn btn-secondary">Buy Now <i class="fa-solid fa-book" style="padding-left: 1rem;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Demon slayer.jfif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Demon slayer</h5>
+                            <p class="card-text">Manga of Demon slayer</p>
+                            <a href="#" class="btn btn-secondary">Buy Now <i class="fa-solid fa-book" style="padding-left: 1rem;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Me for  Section -->
+    <section id="contact" class="py-5 bg-dark" style="height:80vh;margin-top:8rem;">
+
+        <div class="container">
+            <!-- <h2 class="text-center mb-4" style="color:red;text-shadow:0 0 1rem gray;" >Contact Me</h2> -->
+            <form style="color: white;">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="name" class="form-label">User Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="date" class="form-label">Date Line</label>
+                        <input type="date" class="form-control" id="date" placeholder="Enter your Date Line" required>
+                    </div>
+                    <div class="col-md-4  mb-3">
+                        <label for="dropdown" class="form-label">Choose Anime which Want Buy</label>
+                        <select class="form-select" id="dropdown" name="options" required>
+                          <option selected disabled>Select Movie</option>
+                          <option value="option1">Naruto</option>
+                          <option value="option2">Jutjusu Kiason</option>
+                          <option value="option3">Demon slayer</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3 ">
+                        <label for="dropdown" class="form-label">Choose Address</label>
+                        <div class="ratio ratio-16x9">
+                            <input type="file" class="form-control" id="file" placeholder="Enter your File" required accept="image/*" />   
+                            <div id="preview-container" class="mt-3">
+                                <img id="preview" src="" alt="Image Preview" class="img-thumbnail" style="width:500px;height:250px; display: none;" />
+                            </div>          
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message " rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary bg-success">Send Message</button>
+                </div>
+            </form>
+
+
+            
+        </div>
+
+    </section>
+    
+
+    <!-- links js for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom code JavaScript -->
+
+
+    
+    <script>
+        // Example JavaScript: Smooth Scroll for Navigation Links
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+    });
+
+    
+
+
+    // input file a img full input screen
+    const fileInput = document.getElementById('file');
+    const preview = document.getElementById('preview');
+
+
+    fileInput.addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          preview.src = e.target.result;
+          preview.style.display = 'block'; // Show the image
+        };
+        reader.readAsDataURL(file); // Read the file as a data URL
+        } 
+        else {
+        preview.src = '';
+        preview.style.display = 'none'; // Hide the image if no file is selected
+       }
+    });
+    
+    </script>
+</body>
+</html>
